@@ -1,0 +1,493 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		750275862136F952003F127E /* LogInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 750275852136F952003F127E /* LogInViewController.swift */; };
+		750275882136FA14003F127E /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 750275872136FA14003F127E /* FirstViewController.swift */; };
+		7502758A21370BD6003F127E /* ForgotPasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7502758921370BD6003F127E /* ForgotPasswordViewController.swift */; };
+		7503891F2139B18E0050CA0E /* HoleReviewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7503891E2139B18E0050CA0E /* HoleReviewViewController.swift */; };
+		7508FCC321374BF300BAF2DC /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 7508FCC221374BF300BAF2DC /* GoogleService-Info.plist */; };
+		7508FCC52137706500BAF2DC /* RoundDataGathererViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7508FCC42137706500BAF2DC /* RoundDataGathererViewController.swift */; };
+		7508FCC7213783AC00BAF2DC /* HoleTypeSelectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7508FCC6213783AC00BAF2DC /* HoleTypeSelectionViewController.swift */; };
+		7508FCC9213785F800BAF2DC /* AllHolesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7508FCC8213785F800BAF2DC /* AllHolesViewController.swift */; };
+		7529E7CF21365F0900132AF3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7529E7CE21365F0900132AF3 /* AppDelegate.swift */; };
+		7529E7D121365F0900132AF3 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7529E7D021365F0900132AF3 /* SignUpViewController.swift */; };
+		7529E7D421365F0900132AF3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7529E7D221365F0900132AF3 /* Main.storyboard */; };
+		7529E7D621365F0D00132AF3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7529E7D521365F0D00132AF3 /* Assets.xcassets */; };
+		7529E7D921365F0D00132AF3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7529E7D721365F0D00132AF3 /* LaunchScreen.storyboard */; };
+		7529E7E32136649300132AF3 /* AlertController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7529E7E22136649300132AF3 /* AlertController.swift */; };
+		7529E7E5213668CB00132AF3 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7529E7E4213668CB00132AF3 /* HomeViewController.swift */; };
+		755CD98C215AB8DB00C0C204 /* ReviewRoundGathererViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 755CD98B215AB8DB00C0C204 /* ReviewRoundGathererViewController.swift */; };
+		75C3B7DF2140D75200AE3F8A /* EighteenOrNineViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75C3B7DE2140D75200AE3F8A /* EighteenOrNineViewController.swift */; };
+		85103DFCF7C547E51E340C1C /* Pods_Golf_Analyser.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DB34B3C91EBEA69F8D64562D /* Pods_Golf_Analyser.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		125E37F3F0B3F874CD3B1A0B /* Pods-Golf Analyser.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Golf Analyser.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Golf Analyser/Pods-Golf Analyser.debug.xcconfig"; sourceTree = "<group>"; };
+		750275852136F952003F127E /* LogInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogInViewController.swift; sourceTree = "<group>"; };
+		750275872136FA14003F127E /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
+		7502758921370BD6003F127E /* ForgotPasswordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgotPasswordViewController.swift; sourceTree = "<group>"; };
+		7503891E2139B18E0050CA0E /* HoleReviewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HoleReviewViewController.swift; sourceTree = "<group>"; };
+		7508FCC221374BF300BAF2DC /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		7508FCC42137706500BAF2DC /* RoundDataGathererViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundDataGathererViewController.swift; sourceTree = "<group>"; };
+		7508FCC6213783AC00BAF2DC /* HoleTypeSelectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HoleTypeSelectionViewController.swift; sourceTree = "<group>"; };
+		7508FCC8213785F800BAF2DC /* AllHolesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllHolesViewController.swift; sourceTree = "<group>"; };
+		7529E7CB21365F0900132AF3 /* Golf Analyser.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Golf Analyser.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		7529E7CE21365F0900132AF3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		7529E7D021365F0900132AF3 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
+		7529E7D321365F0900132AF3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		7529E7D521365F0D00132AF3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		7529E7D821365F0D00132AF3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		7529E7DA21365F0D00132AF3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7529E7E22136649300132AF3 /* AlertController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertController.swift; sourceTree = "<group>"; };
+		7529E7E4213668CB00132AF3 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		755CD98B215AB8DB00C0C204 /* ReviewRoundGathererViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReviewRoundGathererViewController.swift; sourceTree = "<group>"; };
+		75C3B7DE2140D75200AE3F8A /* EighteenOrNineViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EighteenOrNineViewController.swift; sourceTree = "<group>"; };
+		ABC209E53E98DF38FCE25327 /* Pods-Golf Analyser.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Golf Analyser.release.xcconfig"; path = "Pods/Target Support Files/Pods-Golf Analyser/Pods-Golf Analyser.release.xcconfig"; sourceTree = "<group>"; };
+		DB34B3C91EBEA69F8D64562D /* Pods_Golf_Analyser.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Golf_Analyser.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		7529E7C821365F0900132AF3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				85103DFCF7C547E51E340C1C /* Pods_Golf_Analyser.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		7529E7C221365F0900132AF3 = {
+			isa = PBXGroup;
+			children = (
+				7529E7CD21365F0900132AF3 /* Golf Analyser */,
+				7529E7CC21365F0900132AF3 /* Products */,
+				ED84628D40C315B34217E2F4 /* Pods */,
+				FFB9A2946F13101C078833F6 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		7529E7CC21365F0900132AF3 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				7529E7CB21365F0900132AF3 /* Golf Analyser.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		7529E7CD21365F0900132AF3 /* Golf Analyser */ = {
+			isa = PBXGroup;
+			children = (
+				7529E7E22136649300132AF3 /* AlertController.swift */,
+				7529E7E12136646500132AF3 /* Custom Classes */,
+				7529E7E02136645B00132AF3 /* View Controllers */,
+				7529E7CE21365F0900132AF3 /* AppDelegate.swift */,
+				7529E7D221365F0900132AF3 /* Main.storyboard */,
+				7529E7D521365F0D00132AF3 /* Assets.xcassets */,
+				7508FCC221374BF300BAF2DC /* GoogleService-Info.plist */,
+				7529E7D721365F0D00132AF3 /* LaunchScreen.storyboard */,
+				7529E7DA21365F0D00132AF3 /* Info.plist */,
+			);
+			path = "Golf Analyser";
+			sourceTree = "<group>";
+		};
+		7529E7E02136645B00132AF3 /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				7529E7D021365F0900132AF3 /* SignUpViewController.swift */,
+				750275852136F952003F127E /* LogInViewController.swift */,
+				750275872136FA14003F127E /* FirstViewController.swift */,
+				7502758921370BD6003F127E /* ForgotPasswordViewController.swift */,
+				7529E7E4213668CB00132AF3 /* HomeViewController.swift */,
+				7508FCC42137706500BAF2DC /* RoundDataGathererViewController.swift */,
+				7508FCC6213783AC00BAF2DC /* HoleTypeSelectionViewController.swift */,
+				7508FCC8213785F800BAF2DC /* AllHolesViewController.swift */,
+				7503891E2139B18E0050CA0E /* HoleReviewViewController.swift */,
+				75C3B7DE2140D75200AE3F8A /* EighteenOrNineViewController.swift */,
+				755CD98B215AB8DB00C0C204 /* ReviewRoundGathererViewController.swift */,
+			);
+			path = "View Controllers";
+			sourceTree = "<group>";
+		};
+		7529E7E12136646500132AF3 /* Custom Classes */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "Custom Classes";
+			sourceTree = "<group>";
+		};
+		ED84628D40C315B34217E2F4 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				125E37F3F0B3F874CD3B1A0B /* Pods-Golf Analyser.debug.xcconfig */,
+				ABC209E53E98DF38FCE25327 /* Pods-Golf Analyser.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		FFB9A2946F13101C078833F6 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				DB34B3C91EBEA69F8D64562D /* Pods_Golf_Analyser.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		7529E7CA21365F0900132AF3 /* Golf Analyser */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7529E7DD21365F0D00132AF3 /* Build configuration list for PBXNativeTarget "Golf Analyser" */;
+			buildPhases = (
+				984779988244B54E151170BA /* [CP] Check Pods Manifest.lock */,
+				7529E7C721365F0900132AF3 /* Sources */,
+				7529E7C821365F0900132AF3 /* Frameworks */,
+				7529E7C921365F0900132AF3 /* Resources */,
+				D8B17DCA801C0F0FFFF468C5 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Golf Analyser";
+			productName = "Golf Analyser";
+			productReference = 7529E7CB21365F0900132AF3 /* Golf Analyser.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		7529E7C321365F0900132AF3 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0940;
+				LastUpgradeCheck = 0940;
+				ORGANIZATIONNAME = "Leon Djusberg";
+				TargetAttributes = {
+					7529E7CA21365F0900132AF3 = {
+						CreatedOnToolsVersion = 9.4.1;
+						LastSwiftMigration = 1000;
+					};
+				};
+			};
+			buildConfigurationList = 7529E7C621365F0900132AF3 /* Build configuration list for PBXProject "Golf Analyser" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 7529E7C221365F0900132AF3;
+			productRefGroup = 7529E7CC21365F0900132AF3 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				7529E7CA21365F0900132AF3 /* Golf Analyser */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		7529E7C921365F0900132AF3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7529E7D921365F0D00132AF3 /* LaunchScreen.storyboard in Resources */,
+				7508FCC321374BF300BAF2DC /* GoogleService-Info.plist in Resources */,
+				7529E7D621365F0D00132AF3 /* Assets.xcassets in Resources */,
+				7529E7D421365F0900132AF3 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		984779988244B54E151170BA /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Golf Analyser-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D8B17DCA801C0F0FFFF468C5 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Golf Analyser/Pods-Golf Analyser-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/BoringSSL/openssl.framework",
+				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleUtilities/GoogleUtilities.framework",
+				"${BUILT_PRODUCTS_DIR}/Protobuf/Protobuf.framework",
+				"${BUILT_PRODUCTS_DIR}/gRPC/GRPCClient.framework",
+				"${BUILT_PRODUCTS_DIR}/gRPC-C++/grpcpp.framework",
+				"${BUILT_PRODUCTS_DIR}/gRPC-Core/grpc.framework",
+				"${BUILT_PRODUCTS_DIR}/gRPC-ProtoRPC/ProtoRPC.framework",
+				"${BUILT_PRODUCTS_DIR}/gRPC-RxLibrary/RxLibrary.framework",
+				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
+				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/openssl.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleUtilities.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Protobuf.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GRPCClient.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/grpcpp.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/grpc.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ProtoRPC.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxLibrary.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Golf Analyser/Pods-Golf Analyser-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		7529E7C721365F0900132AF3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7529E7D121365F0900132AF3 /* SignUpViewController.swift in Sources */,
+				7502758A21370BD6003F127E /* ForgotPasswordViewController.swift in Sources */,
+				755CD98C215AB8DB00C0C204 /* ReviewRoundGathererViewController.swift in Sources */,
+				7503891F2139B18E0050CA0E /* HoleReviewViewController.swift in Sources */,
+				7529E7E32136649300132AF3 /* AlertController.swift in Sources */,
+				75C3B7DF2140D75200AE3F8A /* EighteenOrNineViewController.swift in Sources */,
+				7508FCC52137706500BAF2DC /* RoundDataGathererViewController.swift in Sources */,
+				7508FCC9213785F800BAF2DC /* AllHolesViewController.swift in Sources */,
+				7529E7CF21365F0900132AF3 /* AppDelegate.swift in Sources */,
+				7508FCC7213783AC00BAF2DC /* HoleTypeSelectionViewController.swift in Sources */,
+				750275862136F952003F127E /* LogInViewController.swift in Sources */,
+				750275882136FA14003F127E /* FirstViewController.swift in Sources */,
+				7529E7E5213668CB00132AF3 /* HomeViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		7529E7D221365F0900132AF3 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7529E7D321365F0900132AF3 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		7529E7D721365F0D00132AF3 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7529E7D821365F0D00132AF3 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		7529E7DB21365F0D00132AF3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		7529E7DC21365F0D00132AF3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		7529E7DE21365F0D00132AF3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 125E37F3F0B3F874CD3B1A0B /* Pods-Golf Analyser.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 5PSSV7624A;
+				INFOPLIST_FILE = "Golf Analyser/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.Leon-Djusberg.Golf-Analyser";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		7529E7DF21365F0D00132AF3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = ABC209E53E98DF38FCE25327 /* Pods-Golf Analyser.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 5PSSV7624A;
+				INFOPLIST_FILE = "Golf Analyser/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.Leon-Djusberg.Golf-Analyser";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		7529E7C621365F0900132AF3 /* Build configuration list for PBXProject "Golf Analyser" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7529E7DB21365F0D00132AF3 /* Debug */,
+				7529E7DC21365F0D00132AF3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7529E7DD21365F0D00132AF3 /* Build configuration list for PBXNativeTarget "Golf Analyser" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7529E7DE21365F0D00132AF3 /* Debug */,
+				7529E7DF21365F0D00132AF3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 7529E7C321365F0900132AF3 /* Project object */;
+}
