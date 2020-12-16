@@ -167,16 +167,16 @@ class RoundDataGathererViewController: UIViewController {
             changeToPuttsAndScore()
         } else if currentQuestionLbl.text == "Was your drive in the hazard or out of bounds?" && UserDefaults.standard.string(forKey: "par") == "4" {
             questionDict["Was your drive in the hazard or out of bounds?"] = false
-            currentQuestionLbl.text = "Was your second or third shot on the green?"
+            currentQuestionLbl.text = "Were you in a greenside bunker?"
         } else if currentQuestionLbl.text == "Were you in a greenside bunker?" {
             questionDict["Were you in a greenside bunker?"] = false
             changeToPuttsAndScore()
         } else if currentQuestionLbl.text == "Was your drive in the hazard or out of bounds?" && UserDefaults.standard.string(forKey: "par") == "5" {
-            questionDict["Was your drive in the hazard or out of bounds? "] = false
-            currentQuestionLbl.text = "Were you on the green in two shots"
+            questionDict["Was your drive in the hazard or out of bounds?"] = false
+            currentQuestionLbl.text = "Was your second or third shot on the green?"
         } else if currentQuestionLbl.text == "Was your second or third shot on the green?" {
             questionDict["Was your second or third shot on the green?"] = false
-            currentQuestionLbl.text = "Was your drive in the hazard or out of bounds?"
+            currentQuestionLbl.text = "Were you in a greenside bunker?"
         }
         
     }

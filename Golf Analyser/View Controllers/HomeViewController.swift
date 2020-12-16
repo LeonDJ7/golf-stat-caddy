@@ -8,11 +8,18 @@
 
 import UIKit
 import Firebase
+import GoogleMobileAds
 
 var tellUserAboutLastRound = false
 
-class HomeViewController: UIViewController, UIScrollViewDelegate {
+class HomeViewController: UIViewController, UIScrollViewDelegate, GADBannerViewDelegate, GADInterstitialDelegate {
 
+    @IBOutlet weak var par3Lbl: UILabel!
+    @IBOutlet weak var par4Lbl: UILabel!
+    @IBOutlet weak var par5Lbl: UILabel!
+    @IBOutlet weak var previousRoundsBtn: UIButton!
+    @IBOutlet weak var changeNameBtn: UIButton!
+    @IBOutlet weak var bannerView: GADBannerView!
     @IBOutlet weak var averagePlusMinusPar: UILabel!
     @IBOutlet weak var logOutBtn: UIButton!
     @IBOutlet weak var welcomeLbl: UILabel!
@@ -31,12 +38,26 @@ class HomeViewController: UIViewController, UIScrollViewDelegate {
     @IBOutlet weak var parFiveHorOB: UILabel!
     @IBOutlet weak var parFiveHitFairwayPercentage: UILabel!
     @IBOutlet weak var parFiveAvgScore: UILabel!
+    var interstitial: GADInterstitial!
     
     var roundNumber: Int!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        par3Lbl.layer.cornerRadius = 5
+        par4Lbl.layer.cornerRadius = 5
+        par5Lbl.layer.cornerRadius = 5
+        startRoundBtn.layer.cornerRadius = 5
+        logOutBtn.layer.cornerRadius = 5
+        changeNameBtn.layer.cornerRadius = 5
+        previousRoundsBtn.layer.cornerRadius = 5
+        
+        bannerView.adUnitID = "ca-app-pub-2790005755690511/6741610001"
+        bannerView.rootViewController = self
+        let bannerRequest = GADRequest()
+        bannerView.load(bannerRequest)
+        bannerView.delegate = self
         
         var parThrees = 0.0
         var parFours = 0.0
@@ -60,10 +81,11 @@ class HomeViewController: UIViewController, UIScrollViewDelegate {
         var parFourFairwaysHit = 0.0
         var parFiveFairwaysHit = 0.0
         
-        
         let name = Auth.auth().currentUser!.displayName
         if name != nil {
+            
             welcomeLbl.text = "Welcome \(name!)"
+            
         }
         
         // set up welcomeLbl
@@ -279,7 +301,7 @@ class HomeViewController: UIViewController, UIScrollViewDelegate {
                         
                         // if 9 holes, double certain variables to equate to an 18 hole round
                         
-                        if is9Holes == false {
+                        if is9Holes == true {
                             
                             totalScore += score*2
                             
@@ -408,6 +430,28 @@ class HomeViewController: UIViewController, UIScrollViewDelegate {
                 })
             }
         }
+        
+        interstitial = GADInterstitial(adUnitID: "ca-app-pub-2790005755690511/5270699946")
+        interstitial.delegate = self
+        let interstitialRequest = GADRequest()
+        interstitial.load(interstitialRequest)
+        interstitial = createAndLoadInterstitial()
+        
+        
+    }
+    
+    func createAndLoadInterstitial() -> GADInterstitial {
+        let interstitial = GADInterstitial(adUnitID: "ca-app-pub-2790005755690511/5270699946")
+        interstitial.delegate = self
+        let interstitialRequest = GADRequest()
+        interstitial.load(interstitialRequest)
+        return interstitial
+    }
+    
+    func interstitialDidDismissScreen(_ ad: GADInterstitial) {
+        interstitial = createAndLoadInterstitial()
+        
+        performSegue(withIdentifier: "toPreviousRounds", sender: self)
     }
     
     @IBAction func logOutBtnTapped(_ sender: Any) {
@@ -528,6 +572,29 @@ class HomeViewController: UIViewController, UIScrollViewDelegate {
     @IBAction func changeNameBtnTapped(_ sender: Any) {
         
         createAlertThree(title: "Name Change", message: "What is your new display name?")
+        
+    }
+    
+    
+    
+    
+    @IBAction func toPreviousRounds(_ sender: Any) {
+        
+        let randomNumber = arc4random_uniform(3)
+        
+        if randomNumber == 0 {
+            
+            if interstitial.isReady {
+                interstitial.present(fromRootViewController: self)
+                print("interstitial ready")
+            } else {
+                performSegue(withIdentifier: "toPreviousRounds", sender: self)
+                print("interstitial not ready")
+            }
+        } else {
+            performSegue(withIdentifier: "toPreviousRounds", sender: self)
+            print("random number not correct")
+        }
         
     }
     

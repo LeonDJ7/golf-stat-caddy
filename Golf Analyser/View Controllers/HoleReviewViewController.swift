@@ -8,16 +8,24 @@
 
 import UIKit
 import Firebase
+import GoogleMobileAds
 
-class HoleReviewViewController: UIViewController {
+class HoleReviewViewController: UIViewController, GADBannerViewDelegate {
     
     @IBOutlet weak var par5Btn: UIButton!
     @IBOutlet weak var par4Btn: UIButton!
     @IBOutlet weak var par3Btn: UIButton!
     @IBOutlet weak var holeLbl: UILabel!
+    @IBOutlet weak var bannerView: GADBannerView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        bannerView.adUnitID = "ca-app-pub-2790005755690511/4663909871"
+        bannerView.rootViewController = self
+        let bannerRequest = GADRequest()
+        bannerView.load(bannerRequest)
+        bannerView.delegate = self
         
         par3Btn.layer.cornerRadius = 5
         par4Btn.layer.cornerRadius = 5

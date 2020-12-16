@@ -7,6 +7,7 @@ target 'Golf Analyser' do
 
   # Pods for Golf Analyser
 	
+	pod 'Google-Mobile-Ads-SDK'
 	pod 'Firebase/Auth'
 	pod 'Firebase/Core'
 	pod 'Firebase/Firestore'
